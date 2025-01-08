@@ -22,6 +22,7 @@ public class ProdutoRepository {
     return databaseReference.child(produto.getId()).setValueAsync(produto);
     }
 
-    
-    
+    public DatabaseReference listarProdutos(){
+        return databaseReference;
+    }
 }
